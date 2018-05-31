@@ -1,0 +1,32 @@
+{
+  "name": "papago-translator",
+  "version": "0.0.1",
+  "description": "Naver Papago Translator module for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinato/papago-translator.git"
+  },
+  "keywords": [
+    "naver",
+    "papago",
+    "translator",
+    "translation",
+    "papago-translator"
+  ],
+  "author": "Hyunil Jang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zinato/papago-translator/issues"
+  },
+  "homepage": "https://github.com/zinato/papago-translator#readme",
+  "dependencies": {
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}
