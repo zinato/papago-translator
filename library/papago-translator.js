@@ -1,8 +1,9 @@
-var client = {},
-  convertBody = require('./convertBody'),
-  rp = require('request-promise')
+var rp = require('request-promise'),
+    client = {},
+    convertBody = require('./convertBody');
 
 var papagoURI = 'https://naveropenapi.apigw.ntruss.com/nmt/v1/translation';
+
 exports.init = function (obj) {
   client.adiKeyId = obj.apiKeyId;
   client.apiKey = obj.apiKey;
@@ -17,7 +18,7 @@ client.parseXHTMLString = function (text) {
 
 client.translate = function (obj, callback) {
   var text = obj.text;
-  var source = obj.source;
+  var source = 'ko';
   var target = obj.target;
 
   const options = {
