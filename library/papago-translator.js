@@ -1,10 +1,8 @@
 var client = {},
-  convertBody = require('./convertBody');
-  rp = require('request-promise'),
-  regex = /<string [a-zA-Z0-9=":/.]+>(.*)<\/string>/;
+  convertBody = require('./convertBody'),
+  rp = require('request-promise')
 
 var papagoURI = 'https://naveropenapi.apigw.ntruss.com/nmt/v1/translation';
-console.log("11111");
 exports.init = function (obj) {
   client.adiKeyId = obj.apiKeyId;
   client.apiKey = obj.apiKey;
