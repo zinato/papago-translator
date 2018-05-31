@@ -4,7 +4,7 @@ var client = {},
   regex = /<string [a-zA-Z0-9=":/.]+>(.*)<\/string>/;
 
 var papagoURI = 'https://naveropenapi.apigw.ntruss.com/nmt/v1/translation';
-
+console.log("11111");
 exports.init = function (obj) {
   client.adiKeyId = obj.apiKeyId;
   client.apiKey = obj.apiKey;
