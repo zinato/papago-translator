@@ -1,4 +1,4 @@
-papago-translate
+papago-translator
 ==============
 
 Papago Translator module for node.js
