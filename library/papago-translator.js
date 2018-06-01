@@ -17,10 +17,14 @@ client.parseXHTMLString = function (text) {
 };
 
 client.translate = function (obj, callback) {
+
   var text = obj.text;
-  var source = 'ko';
+  var source = obj.source;
   var target = obj.target;
 
+  if(source === undefined || source === null) {
+    source = 'ko';
+  }
   const options = {
     method: 'POST',
     uri: papagoURI,
